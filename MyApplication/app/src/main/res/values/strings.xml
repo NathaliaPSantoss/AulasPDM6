@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DicasFDS</string>
+    <string name="titulo">Informe a Previsão p/o FDS</string>
+    <string name="btn_ver_dicas">Ver Dicas</string>
+    <string-array name="tempo_fds">
+        <item>Selecione...</item>
+        <item>Chuvoso</item>
+        <item>Ensolarado</item>
+        <item>Tempestade</item>
+    </string-array>
+</resources>

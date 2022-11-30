@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AtivPeso</string>
+    <string name="cafe">Café</string>
+    <string name="precoCafe">2.50</string>
+    <string name="precoBurger">6.00</string>
+    <string name="qtdeInit">0</string>
+    <string name="burger">Burger</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="titulo">Faça seu pedido!</string>
+    <string name="item">Item</string>
+    <string name="preco">Preço (R$)</string>
+    <string name="qtd">Quantidade</string>
+    <string name="btnLess">-</string>
+    <string name="btnMore">+</string>
+    <string name="precoPastel">4.50</string>
+    <string name="precoCoca">5.00</string>
+    <string name="coca">Coca</string>
+    <string name="pastel">Pastel</string>
+    <string name="payment">Pagamento</string>
+    <string name="segunda_tela">Segunda tela</string>
+    <string name="primeira_tela">Voltar</string>
+    <string name="confirmarPedido">Confirmar pedido?</string>
+    <string name="sim">Sim</string>
+    <string name="finalizado">Pedido finalizado! Obrigado pela preferência!</string>
+    <string name="resumo">Ver resumo</string>
+
+    <string-array name="spinner_itens">
+        <item>Selecione...</item>
+        <item>PIX</item>
+        <item>Débito</item>
+        <item>Crédito</item>
+    </string-array>
+</resources>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/titulo"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/item"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="@string/preco"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/qtd"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/cafe"/>
+
+        <CheckBox
+            android:id="@+id/cb_cafe"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="@string/cafe"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/valorCafe"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/precoCafe"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnLessCafe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnLess"
+            android:backgroundTint="@color/red"
+            android:onClick="setarQtd"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_cafe"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/qtdeInit"/>
+
+        <Button
+            android:id="@+id/btnPlusCafe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnMore"
+            android:backgroundTint="@color/red"
+            android:layout_marginEnd="30dp"
+            android:onClick="setarQtd"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/coca"/>
+
+        <CheckBox
+            android:id="@+id/cb_coca"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="@string/coca"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/valorCoca"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/precoCoca"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnLessCoca"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnLess"
+            android:backgroundTint="@color/red"
+            android:onClick="setarQtd"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_coca"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/qtdeInit"/>
+
+        <Button
+            android:id="@+id/btnPlusCoca"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnMore"
+            android:backgroundTint="@color/red"
+            android:layout_marginEnd="30dp"
+            android:onClick="setarQtd"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/burger"/>
+
+        <CheckBox
+            android:id="@+id/cb_burger"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="@string/burger"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/valorBurger"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/precoBurger"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/btnLessBurger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnLess"
+            android:backgroundTint="@color/red"
+            android:onClick="setarQtd"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_burger"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/qtdeInit"/>
+
+        <Button
+            android:id="@+id/btnPlusBurger"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnMore"
+            android:backgroundTint="@color/red"
+            android:layout_marginEnd="30dp"
+            android:onClick="setarQtd"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/pastel"/>
+
+        <CheckBox
+            android:id="@+id/cb_pastel"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:text="@string/pastel"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/valorPastel"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:text="@string/precoPastel"
+            android:textSize="20sp"/>
+
+
+
+        <Button
+            android:id="@+id/btnLessPastel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnLess"
+            android:backgroundTint="@color/red"
+            android:onClick="setarQtd"
+            />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_pastel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:text="@string/qtdeInit"/>
+
+        <Button
+            android:id="@+id/btnPlusPastel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:text="@string/btnMore"
+            android:backgroundTint="@color/red"
+            android:layout_marginEnd="30dp"
+            android:onClick="setarQtd"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+n
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginStart="100dp"
+            android:text="@string/payment"/>
+
+        <Spinner
+            android:id="@+id/spn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/spinner_itens"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_gravity="center"
+        android:text="@string/confirmar"
+        android:backgroundTint="@color/red"
+        android:onClick="fazerPedido"/>
+
+</LinearLayout>
